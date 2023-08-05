@@ -1,0 +1,384 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterParent.master.cs" Inherits="MasterParent" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <title>Samruddhi Cleaning Ware</title>
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
+
+    <!-- Font Roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&family=Varela+Round&display=swap" rel="stylesheet" />
+
+    <!-- Bootstrap -->
+    <link href="Vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="Vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- jquery -->
+    <script src="<%=rootPath + "js/jquery-2.2.4.min.js" %>"></script>
+
+    <!-- FancyBox Css  -->
+    <link href="<%=rootPath + "css/jquery.fancybox.css" %>" rel="stylesheet" />
+    <script src="<%=rootPath + "js/jquery.fancybox.js" %>" ></script>
+    
+    <%--<link href="css/jquery.fancybox.css" rel="stylesheet" />
+    <script src="js/jquery.fancybox.js"></script>--%>
+
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Swiper slider -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <!--Animate Css  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!-- Main Css -->
+    <link href="css/samruddhi.css" rel="stylesheet" />
+
+    <%-- Rating Start --%>
+    <link href="<%=rootPath + "css/rating-stars.css" %>" rel="stylesheet" />
+
+    <%-- Tost Notification --%>
+    <link href="<%=rootPath + "css/toastr.css"%>" rel="stylesheet" />
+    <script src="<%=rootPath + "js/toastr.js"%>"></script>
+
+    <script type="text/javascript">
+        function TostTrigger(EventName, MsgText) {
+            // code to be executed
+            Command: toastr[EventName](MsgText)
+            toastr.options = {
+                "closeButton": true,
+                "debug": false,
+                "newestOnTop": false,
+                "progressBar": false,
+                "positionClass": "toast-top-full-width",
+                "preventDuplicates": false,
+                "onclick": null,
+                "showDuration": "300",
+                "hideDuration": "1000",
+                "timeOut": "5000",
+                "extendedTimeOut": "1000",
+                "showEasing": "swing",
+                "hideEasing": "linear",
+                "showMethod": "slideDown",
+                "hideMethod": "fadeOut"
+            }
+
+        }
+    </script>
+
+
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <!-- Navigation Starts -->
+    <section id="navrbar">
+        <div class="header">
+            <div class="p-1">
+                <div class="container-fluid">
+                    <div class="socialBox">
+                        <a href="#" target="_blank" class="topFb" title="Follow Us on facebook"></a>
+                        <a href="#" target="_blank" class="topInsta" title="Follow Us on Instagram"></a>
+                        <a href="#" target="_blank" class="topyouTube" title="Follow Us on Youtube"></a>
+                    </div>
+                    <a href="tel:+919209033650" class="colorWhite text-decoration-none">+91 9209 03 3650</a>
+                </div>
+            </div>
+        </div>
+        <div id="navigationBar">
+            <div class="container-fluid">
+                <nav class="navbar navbar-expand-xl m-0 p-0">
+                    <div class="container-fluid m-0 p-0">
+                        <a class="navbar-brand" href="<%=rootPath %>">
+                            <%--<img alt="" src="images/samruddhi-logo.png" class="samruddhilogo me-3" />
+                            <img alt="" src="images/samrudhhi-lg-name.png" class="lgName" />--%>
+                            <img alt="" src="<%=rootPath + "images/samruddhi-logo.png" %>" class="samruddhilogo me-3" />
+                            <img alt="" src="<%=rootPath + "images/samrudhhi-lg-name.png" %>" class="lgName" />
+                        </a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                            <img src="<%=rootPath + "images/icons/social/nav-btn-color.png" %>"/>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                            <!-- Navigation starts -->
+                            <ul class="navbar-nav ms-auto">
+                                <li class="nav-item">
+                                    <a class="nav-link" aria-current="page" href="<%=rootPath %>">Home</a>
+                                </li>
+                              <%--  <li class="nav-item">
+                                    <a class="nav-link" aria-current="page" href="<%=rootPath + "about-us" %>">About</a>
+                                </li>--%>
+
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link subnav" data-toggle="dropdown" aria-current="page" href="#">About</a>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <a class="dropdown-item" href="<%=rootPath + "about-us" %>">Company Profile</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="<%=rootPath + "testimonials" %>">Reviews</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="<%=rootPath + "news" %>">News</a>
+                                        </li>
+                                </ul>
+                                </li>
+
+
+                                <li class="nav-item dropdown">
+                                    <a href="<%=rootPath + "our-products" %>" class=" nav-link subnav" data-toggle="dropdown">Products <b class="caret"></b></a>
+                                    <ul class="dropdown-menu multi-column columns-2">
+                                        <div class="row">
+                                            <%=submenu %>
+                                            <%--<div class="col-sm-6">
+                                                <ul class="multi-column-dropdown">
+                                                    <li><a href="#">Brooms</a></li>
+                                                    <li><a href="#">Mop</a></li>
+                                                    <li><a href="#">Brush</a></li>
+                                                    <li><a href="#">Wiper</a></li>
+                                                    <li><a href="#">Spare Accessories</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <ul class="multi-column-dropdown">
+                                                    <li><a href="#">Brooms</a></li>
+                                                    <li><a href="#">Mop</a></li>
+                                                    <li><a href="#">Brush</a></li>
+                                                    <li><a href="#">Wiper</a></li>
+                                                    <li><a href="#">Spare Accessories</a></li>
+                                                </ul>
+                                            </div>--%>
+                                        </div>
+                                    </ul>
+                                </li>
+                              
+                              <%--  <li class="nav-item">
+                                    <a class="nav-link" href="<%=rootPath + "testimonials" %>">Review</a>
+                                </li>--%>
+                               <%-- <li class="nav-item">
+                                    <a class="nav-link" href="<%=rootPath + "#" %>">Market</a>
+                                </li>--%>
+                               <%-- <li class="nav-item">
+                                    <a class="nav-link" href="<%=rootPath + "events-gallery" %>">Events</a>
+                                </li>--%>
+
+                                <li class="nav-item dropdown">
+                                <a class="nav-link subnav" role="button" href="#" id="navbarNavDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Gallery & Events
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarNavDropdown">
+                                   <li>
+                                        <a class="dropdown-item" href="#">
+                                            Images &raquo;
+                                        </a>
+                                        <ul class="dropdown-menu dropdown-submenu">
+                                             <%=evntcatstr %>
+                                           <%-- <li>
+                                                <a class="dropdown-item" href="#">Awards & Recognition</a>
+                                            </li>
+                                            <li>
+                                                <hr class="dropdown-divider">
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" href="#">Press News</a>
+                                            </li>
+                                            <li>
+                                                <hr class="dropdown-divider">
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" href="#">Samruddhi Meet</a>
+                                            </li>
+                                            <li>
+                                                <hr class="dropdown-divider">
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" href="#">Tour Samruddhi</a>
+                                            </li>--%>
+                                        </ul>
+                                    </li>
+                                   <%-- <li>
+                                        <hr class="dropdown-divider">
+                                    </li>--%>
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            Videos &raquo;
+                                        </a>
+                                        <ul class="dropdown-menu dropdown-submenu">
+                                              <%=evntvid %>
+                                            <%--<li>
+                                                <a class="dropdown-item" href="#">Products videos</a>
+                                            </li>
+                                            <li>
+                                                <hr class="dropdown-divider">
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" href="#">Exhibition videos</a>
+                                            </li>
+                                            <li>
+                                                <hr class="dropdown-divider">
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" href="#">Other videos</a>
+                                            </li>--%>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+
+                                 <li class="nav-item dropdown">
+                                    <a class="nav-link subnav" data-toggle="dropdown" aria-current="page" href="#">Distributor</a>
+                                    <ul class="dropdown-menu ">
+                                        <li>
+                                            <a class="dropdown-item" href="#">Locate Us</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="<%=rootPath + "enquiry" %>">Enquiry</a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                               <%-- <li class="nav-item">
+                                    <a class="nav-link" href="<%=rootPath + "enquiry" %>" >Enquiry</a>
+                                </li>--%>
+                                  <li class="nav-item">
+                                    <a class="nav-link" href="<%=rootPath + "career" %>">Career</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="<%=rootPath + "contact-us" %>" >Contact Us</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </section>
+    <!-- Navigations End -->
+    <form id="form1" runat="server">
+        <div>
+            <div>
+                <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+            </div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+    <!-- Footer start -->
+    <!--<span class="space40"></span>-->
+    <div class="footer">
+        <span class="space40"></span>
+        <div class="container overflowHidden">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="p-2">
+                        <h4 class="footerCaption clrWhite mb-2 semiBold upperCase letter-sp-2">Navigation</h4>
+                        <div class="fLine mb-3"><span class="fAbsLine"></span></div>
+                        <ul class="footerNav">
+                            <li><a href="<%=rootPath %>">Home</a></li>
+                            <li><a href="<%=rootPath + "about-us" %>">About Us</a></li>
+                            <li><a href="<%=rootPath + "our-products" %>">Products</a></li>
+                            <li><a href="<%=rootPath + "enquiry" %>">Enquiry</a></li>
+                            <li><a href="<%=rootPath + "testimonials"%>">Testimonials</a></li>
+                            <%--<li><a href="<%=rootPath + "events-gallery" %>">Gallery & Events</a></li>--%>
+                            <li><a href="<%=rootPath + "career" %>">Career</a></li>
+                            <li><a href="<%=rootPath + "contact-us" %>">Contact us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="p-2">
+                        <h4 class="footerCaption clrWhite mb-2 semiBold upperCase letter-sp-2">Our Products</h4>
+                        <div class="fLine mb-3"><span class="fAbsLine"></span></div>
+                        <div class="row">
+                            <%=prodstrfoo %>
+                            <%--<div class="col-6">
+                                <ul class="footerNav">
+                                    <li><a href="#">Brooms</a></li>
+                                    <li><a href="#">Brush</a></li>
+                                    <li><a href="#">Mop</a></li>
+                                    <li><a href="#">Wiper</a></li>
+                                    <li><a href="#">Ladder</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-6">
+                                <ul class="footerNav">
+                                    <li><a href="#">Spin Mop</a></li>
+                                    <li><a href="#">Scrubber</a></li>
+                                    <li><a href="#">Wipee</a></li>
+                                    <li><a href="#">Drying Stand</a></li>
+                                    <li><a href="#">Plunger</a></li>
+                                </ul>
+                            </div>--%>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="p-2">
+                        <h4 class="footerCaption clrWhite mb-2 semiBold upperCase letter-sp-2">Get Social</h4>
+                        <div class="fLine mb-3"><span class="fAbsLine"></span></div>
+                        <a href="#" target="_blank" class="foo_fb foo_socialIco" title="Follow us on facebook"></a>
+                        <a href="#" target="_blank" class="foo_twitter foo_socialIco" title="Follow us on twitter"></a>
+                        <a href="#" target="_blank" class="foo_insta foo_socialIco" title="Follow us on Instagram"></a>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="p-2">
+                        <h4 class="footerCaption clrWhite mb-2 semiBold upperCase letter-sp-2">Contact Info</h4>
+                        <div class="fLine mb-3"><span class="fAbsLine"></span></div>
+                        <span class="addr line-ht-5 small">Carporate Office: Plot No. A-1, Samruddhi Park Behind Chintamanrao College Opp. Vishrambag Railway Sattion Sangli 416 415, Maharashtra.</span>
+                        <span class="space15"></span>
+                        <a href="#" class="email breakWord line-ht-5 small txtDecNone">info&#64;samruddhicleaningware&#46;com</a>
+                        <span class="space15"></span>
+                        <a href="+919209033650" class="foo_call line-ht-5 small txtDecNone">+91 920 903 3650</a>
+                    </div>
+                </div>
+            </div>
+            <div class="float_clear"></div>
+        </div>
+        <span class="space20"></span>
+        <span class="footerLine"></span>
+        <div class="container text-center">
+            <div class="p-3">
+                <span class="clrGrey mrg_B_5 small fontRegular">&copy; <%= currentYear %> | Samruddhi Cleaning Wares , All Rights Reserved</span>
+                <span class="clrGrey small fontRegular">Website By <a href="http://www.intellect-systems.com" target="_blank" class="intellect" title="Website Design and Development Service By Intellect Systems">Intellect Systems</a></span>
+            </div>
+        </div>
+    </div>
+    <!-- Footer Ends -->
+
+    <script>
+        $(function () {
+            //alert("function called");
+            // Check the initial Poistion of the Sticky Header
+            var stickyHeaderTop = $('#navigationBar').offset().top;
+
+            $(window).scroll(function () {
+                //alert("alert1");
+                if ($(window).scrollTop() > stickyHeaderTop) {
+                    $('#navigationBar').css({ position: 'fixed', top: '0px' });
+                    $('#navigationBar').css('display', 'block');
+                }
+                else {
+                    $('#navigationBar').css({ position: 'sticky', top: '0px' });
+                    $('#navigationBar').css('display', 'block');
+                }
+            });
+        });
+    </script>
+
+    <script>
+        AOS.init();
+    </script>
+
+</body>
+</html>

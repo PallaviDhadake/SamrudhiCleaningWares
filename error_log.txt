@@ -1,0 +1,225 @@
+07/03/2023 12:43 PM
+ASP.adminpanel_event_master_aspx
+gvEvents_RowDataBound
+Object reference not set to an instance of an object.
+
+
+07/03/2023 12:43 PM
+ASP.adminpanel_event_master_aspx
+gvEvents_RowDataBound
+Object reference not set to an instance of an object.
+
+
+07/03/2023 12:49 PM
+ASP.adminpanel_event_master_aspx
+gvEvents_RowDataBound
+Object reference not set to an instance of an object.
+
+
+07/03/2023 12:49 PM
+ASP.adminpanel_event_master_aspx
+gvEvents_RowDataBound
+Object reference not set to an instance of an object.
+
+
+07/03/2023 12:50 PM
+ASP.adminpanel_event_master_aspx
+gvEvents_RowDataBound
+Object reference not set to an instance of an object.
+
+
+07/03/2023 12:50 PM
+ASP.adminpanel_event_master_aspx
+gvEvents_RowDataBound
+Object reference not set to an instance of an object.
+
+
+07/03/2023 02:54 PM
+ASP.adminpanel_event_master_aspx
+gvEvents_RowDataBound
+Object reference not set to an instance of an object.
+
+
+07/03/2023 02:54 PM
+ASP.adminpanel_event_master_aspx
+gvEvents_RowDataBound
+Object reference not set to an instance of an object.
+
+
+07/03/2023 02:56 PM
+ASP.adminpanel_event_master_aspx
+gvEvents_RowDataBound
+Object reference not set to an instance of an object.
+
+
+07/03/2023 02:56 PM
+ASP.adminpanel_event_master_aspx
+gvEvents_RowDataBound
+Object reference not set to an instance of an object.
+
+
+07/03/2023 02:56 PM
+ASP.adminpanel_event_master_aspx
+gvEvents_RowDataBound
+Object reference not set to an instance of an object.
+
+
+07/03/2023 02:56 PM
+ASP.adminpanel_event_master_aspx
+gvEvents_RowDataBound
+Object reference not set to an instance of an object.
+
+
+07/03/2023 02:56 PM
+ASP.adminpanel_event_master_aspx
+gvEvents_RowDataBound
+Object reference not set to an instance of an object.
+
+
+07/03/2023 02:56 PM
+ASP.adminpanel_event_master_aspx
+gvEvents_RowDataBound
+Object reference not set to an instance of an object.
+
+
+07/03/2023 02:58 PM
+ASP.adminpanel_event_master_aspx
+gvEvents_RowDataBound
+Object reference not set to an instance of an object.
+
+
+07/03/2023 02:58 PM
+ASP.adminpanel_event_master_aspx
+gvEvents_RowDataBound
+Object reference not set to an instance of an object.
+
+
+07/03/2023 03:18 PM
+ASP.adminpanel_event_master_aspx
+ImageUploadProcess
+A generic error occurred in GDI+.
+
+
+24/03/2023 11:33 AM
+ASP.adminpanel_products_catogery_aspx
+btnDelete_Click
+Incorrect syntax near 'Stand'.
+
+
+24/03/2023 03:19 PM
+ASP.adminpanel_banner_master_aspx
+btnSave_Click
+Could not find a part of the path 'E:\Websites\Samruddhi-CleaningWare\upload\bannerimages\banner-image1.jpg'.
+
+
+28/03/2023 03:23 PM
+ASP.adminpanel_testimonials_master_aspx
+gvTestimonials_RowDataBound
+Object reference not set to an instance of an object.
+
+
+28/03/2023 03:23 PM
+ASP.adminpanel_testimonials_master_aspx
+gvTestimonials_RowDataBound
+Object reference not set to an instance of an object.
+
+
+28/03/2023 03:23 PM
+ASP.adminpanel_testimonials_master_aspx
+gvTestimonials_RowDataBound
+Object reference not set to an instance of an object.
+
+
+28/03/2023 03:23 PM
+ASP.adminpanel_testimonials_master_aspx
+gvTestimonials_RowDataBound
+Object reference not set to an instance of an object.
+
+
+28/03/2023 03:23 PM
+ASP.adminpanel_testimonials_master_aspx
+gvTestimonials_RowDataBound
+Object reference not set to an instance of an object.
+
+
+28/03/2023 03:23 PM
+ASP.adminpanel_testimonials_master_aspx
+gvTestimonials_RowDataBound
+Object reference not set to an instance of an object.
+
+
+28/03/2023 03:23 PM
+ASP.adminpanel_testimonials_master_aspx
+gvTestimonials_RowDataBound
+Object reference not set to an instance of an object.
+
+
+28/03/2023 03:23 PM
+ASP.adminpanel_testimonials_master_aspx
+gvTestimonials_RowDataBound
+Object reference not set to an instance of an object.
+
+
+28/03/2023 03:23 PM
+ASP.adminpanel_testimonials_master_aspx
+gvTestimonials_RowDataBound
+Object reference not set to an instance of an object.
+
+
+28/03/2023 03:23 PM
+ASP.adminpanel_testimonials_master_aspx
+gvTestimonials_RowDataBound
+Object reference not set to an instance of an object.
+
+
+28/03/2023 03:23 PM
+ASP.adminpanel_testimonials_master_aspx
+gvTestimonials_RowDataBound
+Object reference not set to an instance of an object.
+
+
+28/03/2023 03:23 PM
+ASP.adminpanel_testimonials_master_aspx
+gvTestimonials_RowDataBound
+Object reference not set to an instance of an object.
+
+
+28/03/2023 03:23 PM
+ASP.adminpanel_testimonials_master_aspx
+gvTestimonials_RowDataBound
+Object reference not set to an instance of an object.
+
+
+28/03/2023 03:51 PM
+ASP.adminpanel_testimonials_details_aspx
+GetreviewData
+Invalid object name 'TestimonialsCLahane'.
+
+
+28/03/2023 03:52 PM
+ASP.adminpanel_testimonials_details_aspx
+GetreviewData
+Column 'TestPerson' does not belong to table .
+
+
+28/03/2023 04:09 PM
+ASP.adminpanel_testimonials_details_aspx
+btnUpdate_Click
+String or binary data would be truncated.
+The statement has been terminated.
+
+
+28/03/2023 04:11 PM
+ASP.adminpanel_testimonials_details_aspx
+btnUpdate_Click
+String or binary data would be truncated.
+The statement has been terminated.
+
+
+30/03/2023 10:43 AM
+ASP.adminpanel_products_data_aspx
+btnSave_Click
+String or binary data would be truncated.
+The statement has been terminated.
+
+
